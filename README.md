@@ -1,5 +1,8 @@
 # Wagtail_Boulangerie
 Django Wagtail CMS Boulangerie
+Wagtail is an open source CMS written in Python and built on the Django web framework.
+
+
 
 ## Install wagtail 
 ```shell
