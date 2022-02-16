@@ -1,7 +1,8 @@
 {% extends "creative_base.html" %}
-{% load static %}
+{% load static core_tags %}
 {% load wagtailcore_tags %}
 {% load wagtailimages_tags %}
+
 
 {% block body_class %}template-homepage{% endblock %}
 
@@ -24,7 +25,11 @@
 
 {% endblock %}
 
-{% block content %}
+<picture>
     {% image self.banner_image fill-1920x600 as img %}
+    <source srcset="{{ img.url }}" type="image/png">
 
+</picture>
+
+{% block content %}
 {% endblock %}
